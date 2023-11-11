@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--This is an important project!! -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is Tao Wang's personal website">
+        <meta name="author" content="Tao Wang">
+        <meta name="keywords" content="Tao Wang, personal website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tao Wang</title>
+        <link rel="stylesheet" href="./index.css"/>
+        <link rel="stylesheet" href="./menu.css"/>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        
+        <nav id="navBar">
+            <div><a class="logo" href="./index.html">ttwag</a></div>
+            <div>
+                <ul class = "nav_link">
+                    <li><a class="nav_icon" href="#project">Project</a></li>
+                    <li><a class="nav_icon" href="#Hiking">Hiking</a></li>
+                    <li><a class="nav_icon" href="#Blog">Blog</a></li>
+                </ul>
+            </div>    
+        </nav>
+        
+        <nav id="hamburger_nav">
+            <div class="hamburger_menu">
+                <div class="hamburger_icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu_link">
+                    <li><a class="nav_icon" href="./project.html" onclick="toggleMenu()">Project</a></li>
+                    <li><a class="nav_icon" href="#Hiking" onclick="toggleMenu()">Hiking</a></li>
+                    <li><a class="nav_icon" href="#Blog" onclick="toggleMenu()"></a>Blog</li>
+                </div>
+            </div>
+        </nav>
+
+        <section id="profile">
+            <div class="section__pic-container">
+                <img height="300" src="./images/taoWithTreeCropped.jpeg" alt="Tao Wang's Profile Picture"/>    
+            </div>    
+            <div class="section__text">
+                <div>
+                <p class="section__text__p1">Welcome to My Personal Space!</p>
+                <p class="section__text__p1">I am</p>
+                <h1 class="title">Tao Wang</h1>
+                </div>
+                
+                <div class="btn-container">
+                    <button class="btn1"><a class="btn1-a" href="./external_files/resume.pdf" target="_blank">Resume</a></button>
+                    <button class="btn2"><a class="btn2-a" href="mailto:taowang@ucdavis.edu">Contact Me</a></button>
+                </div>
+
+                <div class="social-profile">
+                    <a target="_blank" href='https://www.linkedin.com/in/ttwag/'><img src="./images/linkedin.png" alt="Linkedin" class="icon1"></a>
+                    <a target="_blank" href='https://github.com/ttwag'><img src="./images/github.png" alt="GitHub" class="icon2"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h1 class="title">Why am I Here?</h1>
+            <h1 class="section__text__p1">My Education Journey and Work Experience</h1>
+            <div class="experience-container">
+                <div class="education">
+                    <img src="./images/placeHolder.jpeg" width="500" alt="placeHolder"/>
+                    <div class="detail-container">
+                        <h3>Education</h3>
+                        <br>
+                        <p>University of California, Davis</p>
+                        <p>B.S. in Electrical Engineering, 2021 - 2025</p>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <div class="work1-container">
+                        <h3>Dinning Common Student Worker <br> (Jan 2022 - June 2022)</h3>
+                        <br>
+                        <p>
+                            Everyone starts somewhere!
+                            <br>
+                            I helped Tercero Dining Common chefs to manage the buffet bars and washed dishes in the dish room.  
+                        </p>
+                    </div>
+                    <div class="work2-container">
+                        <h3>Calculus and Physics Tutor <br> (Sep 2022 - June 2023)</h3>
+                        <br>
+                        <p>
+                            Communication, communication, and communication!
+                            <br>
+                            Tutoring Calculus is not just showing formulas. 
+                            I need to express my intuition on the subject coherently.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1 class="section__text__p1">See My Skills</h1>
+            <div class="skills-container">
+            </div>
+        </section>
+
+        <footer>
+            <p>Copyright&copy 2023 Tao Wang. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
