@@ -1,7 +1,7 @@
 /* General */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu&display=swap');
 
-
+/* Home Page */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +15,10 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Transition */
 a, .btn{
     transition: all 300ms ease;
@@ -25,7 +29,7 @@ a, .btn{
     nav_link
     nav_icon
              */
-nav, .nav_link {
+nav, .nav-link {
     display: flex;
 }
 
@@ -35,28 +39,37 @@ nav {
     height: 15vh;
 }
 
-.nav_link {
+.logo {
+    font-size: 2rem;
+    text-decoration: none;
+    color:black;
+}
+.nav-link {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
 }
 
-a {
+.nav-icon {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
 }
 
-a.nav_icon:hover {
+.nav-icon:hover {
     color:grey;
     /* text-decoration: underline; */
     text-underline-offset: 0.4rem;
     text-decoration-color: black;
 }
 
-.logo {
-    font-size: 2rem;
+.nav-icon-curr {
+    color: grey;
+    text-decoration: underline;
 }
+
+
+
 
 /* 
     hamburger_nav
@@ -216,6 +229,10 @@ section-container {
     background-color: white;
 }
 
+.btn1-a {
+    color: black;
+}
+
 .btn1:hover{
     cursor:pointer;
     background: black;
@@ -329,17 +346,53 @@ section-container {
     width: 350px;
 }
 
-
-
-
-
 /* Footer */
 footer {
     height: 15vh;
     margin:0 1rem;
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 footer p{
     text-align:center;
 }
+
+
+/* Project Page */
+
+#projects {
+    margin-top: 4rem;
+}
+
+.project-container {
+    display:flex;
+    gap:2rem;
+    margin-top: 4rem;
+}
+
+.project {
+    display:flex;
+    flex-direction: column;
+    border: 0.1rem black solid;
+    border-radius: 1rem;
+    padding: 2rem;
+    gap:1rem;
+    align-items: center;
+}
+
+.project-img {
+    border-radius: 1rem;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.project-descrip {
+    text-align:center;
+    font-size:1rem;
+    color:gray;
+}
+
+/* The button here uses the button from profile  */
