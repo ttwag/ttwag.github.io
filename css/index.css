@@ -178,6 +178,10 @@ section-container {
     height: 80vh;
 }
 
+.home-img {
+    border-radius: 1rem;
+}
+
 
 .section__pic-container {
     display:flex;
