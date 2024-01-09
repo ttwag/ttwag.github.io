@@ -1,6 +1,5 @@
 ## Improvements
 * Update Resume
-* favcon too small
+* Latest Work experience on top
 * nav bar not fixed.
-* responsive design.
-* Better timeline.
+* Consider filling the image to the border in the project page
