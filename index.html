@@ -9,124 +9,41 @@
         <title>Tao Wang</title>
         <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
         <link rel="stylesheet" href="./css/index.css"/>
-        <link rel="stylesheet" href="./css/menu.css"/>
     </head>
     <body>
-        <script src="./js/script.js"></script>
-        
-        <nav id="navBar">
-            <div><a class="logo" href="./index.html">ttwag</a></div>
-            <div>
-                <ul class = "nav-link">
-                    <li><a class="nav-icon" href="./project.html">Project</a></li>
+        <div class="container">
+            <header>
+                <h1>Tao Wang</h1>
+            </header>
+            <nav class="navbar">
+                <ul>
+                    <ul>
+                        <a href="index.html">Home</a>
+                    </ul>
+                    <ul>
+                        <a href="courses.html">Courses</a>
+                    </ul>
+                    <ul>
+                        <a href="other.html">Other</a>
+                    </ul>
                 </ul>
-            </div>    
-        </nav>
-        
-        <nav id="hamburger_nav">
-            <div class="hamburger_menu">
-                <div class="hamburger_icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu_link">
-                    <li><a class="nav-icon" href="./project.html" onclick="toggleMenu()">Project</a></li>
-                </div>
-            </div>
-        </nav>
-
-        <section id="profile">
-            <div class="section__pic-container">
-                <img class="home-img" src="./images/taoWithTreeCropped.jpeg" alt="Tao Wang's Profile Picture" height="300"/>    
-            </div>    
-            <div class="section__text">
-                <div>
-                <p class="section__text__p1">Welcome to My Personal Space!</p>
-                <p class="section__text__p1">I am</p>
-                <h1 class="title">Tao Wang</h1>
-                </div>
-                
-                <div class="btn-container">
-                    <a class="btn1-a"href="./external_files/resume.pdf" target="_blank">Resume</a>
-                    <a class="btn2-a" href="mailto:taowang@ucdavis.edu">Contact Me</a>
-                </div>
-
-                <div class="social-profile">
-                    <a target="_blank" href='https://www.linkedin.com/in/ttwag/'><img src="./images/linkedin.png" alt="Linkedin" class="icon1"></a>
-                    <a target="_blank" href='https://github.com/ttwag'><img src="./images/github.png" alt="GitHub" class="icon2"></a>
-                    <a target="_blank" href='https://www.pexels.com/@ttwag/'><img src="./images/pexels.png" alt="Pexels" class="icon2"></a>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="experience">
-            <h1 class="title">Why am I Here?</h1>
-            <div class="about-container">
-                <div>
-                </div>
-                <div>
-                    <p class="about-info">I am a third-year electrical engineering student studying at UC Davis.
-                        I am proficient in programming languages such as C++, and I've done projects like CPU Cache Simulation with it.
-                        <br>
-                        Although my primary interest is in computer hardware, I enjoy solving data structure and algorithm problems in places such as <a href="https://leetcode.com/ttwag/" target="blank" color="blue"><b>LeetCode</b></a>.
-                        <br>
-                        <br>
-                        I created this website because I am eagerly looking for internship opportunities.
-                        <br>
-                        I realized that instead of listing my skills and telling my GPA, showing people the technical projects I have done is more convincing and challenges me more.
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </p>
-                </div>
-            </div>
-            <h1 class="section__text__p1">My Education and Work Journey</h1>
-            <div class="experience-container">
-                <div class="education">
-                    <img class="home-img" src="./images/edu.jpeg" width="600" alt="placeHolder"/>
-                    <div class="detail-container">
-                        <h3>Education</h3>
-                        <br>
-                        <p>University of California, Davis</p>
-                        <p>B.S. in Electrical Engineering, 2021 - 2025</p>
-                    </div>
-                </div>
-                
-                <div class="work">
-                    <div class="work1-container">
-                        <h3>Dinning Common Student Worker <br> (Jan 2022 - June 2022)</h3>
-                        <br>
-                        <p>
-                            Everyone starts somewhere!
-                            <br>
-                            I helped Tercero Dining Common chefs to manage the buffet bars and washed dishes in the dish room.  
-                        </p>
-                    </div>
-
-                    <div class="timeline">
-                    </div>
-
-                    <div class="work2-container">
-                        <h3>Calculus and Physics Tutor <br> (Sep 2022 - Current)</h3>
-                        <br>
-                        <p>
-                            Communication, communication, and communication!
-                            <br>
-                            Tutoring Calculus is not just showing formulas. 
-                            I need to express my intuition on the subject coherently.
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-
-        <footer>
-            <p>Copyright&copy 2023 Tao Wang. All Rights Reserved. Last Updated: Jan 8, 2024</p>
-        </footer>
+            </nav>
+            <article = class="content">
+                <img src="./images/taoWithTreeCropped.jpeg" width="200" class="image">
+                <h3>About Me</h3>
+                <p>I am a 4th year Electrical Engineering student at the University of California, Davis. I am interested in math and engineering. In my recent internship, I helped <a href="https://www.cadence.com/en_US/home.html" target="blank">Cadence</a> to convert one of its computational software from C to C++ and had the opportunity to explore the computational software industry.</p>
+                <h3>Interest</h3>
+                <p>Currently, my job and research interests lie in the intersection between math and engineering. On the electrical engineering (EE) side, I am working on a <a href="https://github.com/ttwag/P12_SPICE_Simulator" target="_blank">circuit solver</a> that uses modified nodal analysis to solve the voltage and currents of a reactive circuit. Since I've finished most of my EE courses, I am taking more math courses such as <a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=73" target="_blank">real analysis</a> to solidify my foundation. Moreover, I am learning how to write better proofs with the <a href="https://lean-lang.org" target="_blank">Lean</a> theorem proving assistant.</p>
+                <h3>Resume</h3>
+                <p>Here's my most recent resume: <a href="./external_files/resume.pdf" target="blank">resume.pdf</a></p>
+                <h3>Education</h3>
+                <h4>2021 - 2025</h4>
+                <p>Bachelor of Science, Electrical Engineering, <em>University of California, Davis</em></p>
+                <h3>Contact</h3>
+                <p>Check out my projects on GitHub: <a href="https://github.com/ttwag" target="blank">https://github.com/ttwag</a></p>
+                <p>Check out my job experience on LinkedIn: <a href="https://www.linkedin.com/in/ttwag" target="blank">https://www.linkedin.com/in/ttwag</a></p>
+                <p>Email me: <a href="mailto:taowang@ucdavis.edu">taowang@ucdavis.edu</a></p>
+            </article>
+        </div>
     </body>
 </html>

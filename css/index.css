@@ -1,389 +1,65 @@
-/* General */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Ubuntu&display=swap');
+body {
+    font-family: 'Segoe UI', Tahoma;
+}
+div.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    background: transparent;
+    padding-top: 4em;
+}
 
-/* Home Page */
-* {
-    margin: 0;
+header{
+    padding: 1em;
+    color: black;
+    clear: left;
+    height: 600 px;
+    text-align: center;
+    background: transparent no-repeat;
+    color: #555;
+}
+
+img.image {
+    margin-left: 100px;
+}
+
+nav.navbar {
+    float: left;
+    max-width: 160px;
+    margin: 30;
+    padding: 1em;
+    border: 1px solid gray;
+    border-radius: 1em;
+    }
+        
+nav ul {
+    list-style-type: none;
     padding: 0;
 }
 
-body {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-a {
+nav ul a {
+    text-decoration: none; 
+    color: #555;
+    text-align: center;
+    display: inline-block; 
+    padding: 14px;
     text-decoration: none;
-}
-
-/* Transition */
-a, .btn{
-    transition: all 300ms ease;
-}
-
-/* navBar */
-/* .logo
-    nav_link
-    nav_icon
-             */
-nav, .nav-link {
-    display: flex;
-}
-
-nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 15vh;
-}
-
-.logo {
-    font-size: 2rem;
-    text-decoration: none;
-    color:black;
-}
-.nav-link {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-}
-
-.nav-icon {
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
-}
-
-.nav-icon:hover {
-    color:grey;
-    /* text-decoration: underline; */
-    text-underline-offset: 0.4rem;
-    text-decoration-color: black;
-}
-
-.nav-icon-curr {
-    color: grey;
-    text-decoration: underline;
-}
-
-
-
-
-/* 
-    hamburger_nav
-    hamburger_menu
-    hamburger_icon
-                     */
-#hamburger_nav {
-    display:none;
-}
-
-.hamburger_menu {
-    position:relative;
-    left: 80px;
-    display:inline-block;
-}
-
-.hamburger_icon {
-    display:flex; 
-    flex-direction: column;
-    justify-content: space-between;
-    height:24px;
-    width:30px;
-    cursor:pointer;
-}
-
-.hamburger_icon span {
-    width:100%;
-    height:2px;
-    background-color: black;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu_link {
-    position: absolute;
-    top:100%;
-    right:0;
-    background-color: white;
-    width:fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu_link a {
-    display:block;
-    padding:10px;
-    text-align:center;
-    font-size:1.5rem;
-    color: black;
-    text-decoration: none;
-    transition:all 0.3 ease-in-out;
-}
-
-.menu_link li {
-    list-style: none;
-}
-
-/* When you click the hamburger bars, they rotate to become an "X" */
-.menu_link.open {
-    max-height: 300px;
-}
-
-.hamburger_icon.open span:first-child{
-    transform:rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger_icon.open span:nth-child(2){
-    opacity:0;
-}
-
-.hamburger_icon.open span:last-child{
-    transform:rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger_icon span:first-child {
-    transform:none;
-}
-
-.hamburger_icon span:first-child {
-    opacity:1
-}
-
-
-.hamburger_icon span:first-child {
-    transform:none;
-}
-
-/*Profile Section */
-
-section {
-    padding-top: 4vh;
-    height:96vh;
-    margin: 0 10rem;
-    box-sizing:border-box;
-    min-height: fit-content;
-}
-
-section-container {
-    display:flex;
-}
-
-#profile {
-    display:flex;
-    justify-content: center;
-    gap:5rem;
-    height: 80vh;
-}
-
-.home-img {
-    border-radius: 1rem;
-}
-
-
-.section__pic-container {
-    display:flex;
-    /* height: 400px; */
-    width: 400px;
-    margin:auto 0;
-}
-
-.section__text {
-    align-self: center;
-    text-align: center;
-}
-
-.section__text p{
-    font-weight: 600;
-}
-
-.section__text__p1 {
-    text-align: center;
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
-    color:grey;
-}
-
-.title {
-    font-size:3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-/* Resume and Contact Button */
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-
-.btn1-a {
-    border:0.1rem black solid;
-    border-radius: 2rem;
-    width: 8rem;
-    color: black;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-.btn1-a:hover {
-    background-color: black;
-    color: white;
-}
-
-.btn2-a {
-    border:0.1rem black solid;
-    border-radius: 2rem;
-    width: 8rem;
-    color: white;
-    background-color: black;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-.btn2-a:hover {
-    background-color: white;
-    color: black;
-}
-
-
-/* Linkedin and Github Icons */
-.social-profile {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
-}
-
-.icon1 {
-    cursor: pointer;
-    height: 2.025rem;
-}
-
-.icon2 {
-    cursor: pointer;
-    height: 2rem;
-}
-
-/* About */
-#about {
-    margin-top: 2rem;
-}
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.about-info {
-    text-align: center;
-    line-height: 2rem;
-}
-
-/* Experience Section */
-#experience {
-    margin-top: 1rem;
     position: relative;
+    left: 0px;
+    background-size:100%;
+    background-repeat:no-repeat;
 }
 
-.experience-container {
-    display:flex;
-    gap:10rem;
-    
+nav ul a:hover {
+    color: #ccc;
+}
+    p {
+    text-indent: 20px;
 }
 
-.education {
-    justify-content: center;
-    margin-top: 2.5rem;
+article.content {
+    margin-left: 190px;
+    padding: 1em;
+    overflow: hidden;
+    color: #555;
 }
-
-.detail-container {
-    margin-top: 5rem;
-    text-align: center;
-    padding: 1.5rem;
-    flex:3;
-    background: white;
-    border-radius: 2rem;
-    border:black 0.1rem solid;
-}
-
-.work {
-    margin-top: 2.5rem;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap:0.5rem;
-}
-
-.timeline {
-    border-left: 0.2rem black solid;
-    height: 7rem;
-    margin-left: 12rem;
-}
-
-.work1-container, .work2-container {
-    text-align: center;
-    padding:1.5rem;
-    width: 350px;
-}
-
-/* Footer */
-footer {
-    height: 15vh;
-    margin:0 1rem;
-    margin-top: 7rem;
-}
-
-footer p{
-    text-align:center;
-}
-
-
-/* Project Page */
-
-#projects {
-    margin-top: 4rem;
-    margin-right: 4rem;
-    margin-left:4rem;
-}
-
-.project-container {
-    display:flex;
-    gap:2rem;
-    margin-top: 4rem;
-}
-
-.project {
-    display:flex;
-    flex-direction: column;
-    border: 0.1rem black solid;
-    border-radius: 1rem;
-    padding: 2rem;
-    gap:1rem;
-    align-items: center;
-}
-
-.project-img {
-    border-radius: 1rem;
-}
-
-.project-title {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.project-descrip {
-    text-align:center;
-    font-size:1rem;
-    color:gray;
-}
-
-/* GitHub button uses the btn2-a from profile section */
