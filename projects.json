@@ -1,9 +1,21 @@
 [
   {
-    "name": "Multithreaded HTTP Webserver",
+    "name": "Formally Verify Data Structure and Algorithm",
+    "language": "Dafny",
+    "description": "Proving termination and correctness of Insertion and Selection Sort, and equivalence of difference linked list reversal functions",
+    "repo": "https://github.com/ttwag/dafny-dsa-exercises"
+  },
+  {
+    "name": "A Compiler for My Toy Language",
     "language": "Rust",
-    "description": "A toy webserver for learning concurrency primitives like mutex and channel and HTTP request parsing",
-    "repo": "https://github.com/ttwag/Toy-Webserver"
+    "description": "Designed a toy language's grammar (expression, statement) and built a toy compiler to compile my toy language into RISC-V assembly running under Linux",
+    "repo": "https://github.com/ttwag/risc-v_compiler"
+  },
+  {
+    "name": "Single Cycle RISC-V CPU",
+    "language": "SystemVerilog",
+    "description": "A textbook style RISC-V barebone CPU",
+    "repo": "https://github.com/ttwag/risc-v_cpu"
   },
   {
     "name": "Circuit Solver (SPICE-style)",
@@ -12,9 +24,33 @@
     "repo": "https://github.com/ttwag/P12_SPICE_Simulator"
   },
   {
+    "name": "Electromagnetic",
+    "language": "Course Note",
+    "description": "Notes I took while taking UC Davis's EEC130AB series. Main topics include the Transmission Line derivation and EM Wave Reflection",
+    "repo": "https://github.com/ttwag/EEC130AB-Electromagnetics"
+  },
+  {
+    "name": "Electronic Circuits",
+    "language": "Course Note",
+    "description": "Notes I took while taking UC Davis's EEC110B. Main topics include small and large signal analysis on Bipolar and MOS Transistors",
+    "repo": "https://github.com/ttwag/EEC110B-Electronic_Circuits"
+  },
+  {
+    "name": "Multithreaded HTTP Webserver",
+    "language": "Rust",
+    "description": "A toy webserver for learning concurrency primitives like mutex and channel and HTTP request parsing",
+    "repo": "https://github.com/ttwag/Toy-Webserver"
+  },
+  {
     "name": "RISC-V Floating Point Multiplication",
-    "language": "Assembly",
+    "language": "RISC-V Assembly",
     "description": "Floating-point multiply implemented in RISC-V assembly",
     "repo": "https://github.com/ttwag/P4_Multiply_Floats"
+  },
+  {
+    "name": "Least Recently Used (LRU) Cache Simulation",
+    "language": "C++",
+    "description": "Simulate a fully-associative LRU cache and get its hit and miss rate",
+    "repo": "https://github.com/ttwag/P11_LRU_Cache"
   }
 ]
