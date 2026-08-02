@@ -8,12 +8,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/base.css">
+<link rel="stylesheet" href="./css/home.css">
 </head>
 <body>
-
-<div class="bg-rail left" aria-hidden="true"></div>
-<div class="bg-rail right" aria-hidden="true"></div>
 
 <div class="wrap">
 
@@ -45,47 +43,21 @@
 
   <hr class="rule">
 
-  <section id="flagship" class="flagship">
-    <h2 class="section-title">Flagship Project</h2>
-    <h3>A toy compiler — and the RISC-V CPU I built to run it</h3>
-    <p>
-      A language with no built-in multiplication, compiled by a hand-written Rust toolchain into
-      RISC-V assembly, executed on a single-cycle CPU I designed and wrote testbenches for — then
-      debugged waveform by waveform in Surfer.
-    </p>
-    <p>
-      The full write-up covers the language and register-allocation decisions, the build process
-      end to end, and a real bug that only showed up once the compiler, CPU, and testbench were
-      running together.
-    </p>
-
-    <div class="flagship-links">
-      <a href="compiler-cpu-writeup.html">Read the full write-up →</a>
-      <a href="https://github.com/ttwag/risc-v_compiler">risc-v_compiler</a>
-      <a href="https://github.com/ttwag/risc-v_cpu">risc-v_cpu</a>
+  <section id="writing">
+    <h2 class="section-title">Writing</h2>
+    <div class="post-list" id="post-list">
+      <div class="post-list-empty">Loading…</div>
     </div>
   </section>
 
   <hr class="rule">
 
-  <section id="other-work">
-    <h2 class="section-title">Other Work</h2>
-    <div class="other-list">
-      <div class="other-item">
-        <div>
-          <div class="oi-name">Circuit Solver (SPICE-style)</div>
-          <div class="oi-desc">Modified nodal analysis to solve voltage/current in reactive circuits</div>
-        </div>
-        <a class="repo-link" href="https://github.com/ttwag/P12_SPICE_Simulator">repo →</a>
-      </div>
-      <div class="other-item">
-        <div>
-          <div class="oi-name">RISC-V Floating Point Multiplication</div>
-          <div class="oi-desc">Floating-point multiply implemented in RISC-V assembly</div>
-        </div>
-        <a class="repo-link" href="https://github.com/ttwag/P4_Multiply_Floats">repo →</a>
-      </div>
-    </div>
+  <section id="project">
+    <h2 class="section-title">project Work</h2>
+    
+    <!-- JavaScript will inject the project items here -->
+    <div id="project-list" class="project-list"></div>
+    
     <p style="margin-top: 18px;">
       <a href="https://github.com/ttwag?tab=repositories">Full list of repositories on GitHub →</a>
     </p>
@@ -97,7 +69,7 @@
     <h2 class="section-title">Education</h2>
     <div class="meta-row">
       <span class="m-label">2026–2027</span>
-      <span class="m-value">Master's (1-year), <em>program TBD</em></span>
+      <span class="m-value">EECS M.Eng., UC Berkeley</span>
     </div>
     <div class="meta-row">
       <span class="m-label">2021–2025</span>
@@ -110,14 +82,16 @@
   <footer id="contact">
     <h2 class="section-title">Contact</h2>
     <div class="contact-list">
-      <div><span class="c-label">Email</span><a href="mailto:taowang@ucdavis.edu">taowang@ucdavis.edu</a></div>
+      <div><span class="c-label">Email</span><a href="mailto:ttwag@berkeley.edu">ttwag@berkeley.edu</a></div>
       <div><span class="c-label">GitHub</span><a href="https://github.com/ttwag">github.com/ttwag</a></div>
       <div><span class="c-label">LinkedIn</span><a href="https://www.linkedin.com/in/ttwag">linkedin.com/in/ttwag</a></div>
     </div>
-    <p class="foot-note">Tao Wang · Davis, CA</p>
+    <p class="foot-note">Tao Wang · Berkeley, CA</p>
   </footer>
 
 </div>
 
+<script src="js/render-posts.js"></script>
+<script src="js/render-projects.js"></script>
 </body>
 </html>

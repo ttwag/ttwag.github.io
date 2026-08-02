@@ -1,0 +1,9 @@
+[
+  {
+    "title": "A Journey from Multiplication to Bits on Wires",
+    "path": "posts/compiler-cpu-writeup.html",
+    "date": "2026-08",
+    "category": "technical",
+    "summary": "Began with an audited compilers class that motivated me to design a toy language and implement its compiler, and ended with viewing the bits on the Surfer waveform viewer, instruction by instruction."
+  }
+]

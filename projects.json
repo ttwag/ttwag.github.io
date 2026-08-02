@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Multithreaded HTTP Webserver",
+    "language": "Rust",
+    "description": "A toy webserver for learning concurrency primitives like mutex and channel and HTTP request parsing",
+    "repo": "https://github.com/ttwag/Toy-Webserver"
+  },
+  {
+    "name": "Circuit Solver (SPICE-style)",
+    "language": "Python",
+    "description": "Modified nodal analysis to solve voltage/current in non-reactive circuits",
+    "repo": "https://github.com/ttwag/P12_SPICE_Simulator"
+  },
+  {
+    "name": "RISC-V Floating Point Multiplication",
+    "language": "Assembly",
+    "description": "Floating-point multiply implemented in RISC-V assembly",
+    "repo": "https://github.com/ttwag/P4_Multiply_Floats"
+  }
+]
