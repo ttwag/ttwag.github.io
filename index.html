@@ -1,72 +1,123 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-P8773DRP');</script>
-        <!-- End Google Tag Manager -->
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2F0S82T24"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tao Wang</title>
+<meta name="description" content="Tao Wang — builds systems from language design down to logic gates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
 
-        gtag('config', 'G-Z2F0S82T24');
-        </script>
-        <meta charset="UTF-8">
-        <meta name="description" content="This is Tao Wang's personal website">
-        <meta name="author" content="Tao Wang">
-        <meta name="keywords" content="Tao Wang, personal website">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tao Wang</title>
-        <link rel="icon" href="./images/favicon.png" type="image/png" sizes="32x32">
-        <link rel="stylesheet" href="./css/index.css"/>
-    </head>
-    <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8773DRP"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <div class="container">
-            <header>
-                <h1>Tao Wang</h1>
-            </header>
-            <nav class="navbar">
-                <ul>
-                    <ul>
-                        <a href="index.html">Home</a>
-                    </ul>
-                    <ul>
-                        <a href="courses.html">Courses</a>
-                    </ul>
-                    <ul>
-                        <a href="https://github.com/ttwag" target="blank">Projects</a>
-                    </ul>
-                    <ul>
-                        <a href="other.html">Other</a>
-                    </ul>
-                </ul>
-            </nav>
-            <article = class="content">
-                <img src="./images/profile.jpeg" width="200" class="image">
-                <h3>About Me</h3>
-                <p>I am a 4th year Electrical Engineering student at the University of California, Davis. I am interested in math and engineering. In my recent internship, I helped <a href="https://www.cadence.com/en_US/home.html" target="blank">Cadence</a> to convert one of its computational software from C to C++ and had the opportunity to explore the computational software industry.</p>
-                <h3>Interest</h3>
-                <p>Currently, my job and research interests lie in the intersection between math and engineering. On the electrical engineering (EE) side, I am working on a <a href="https://github.com/ttwag/P12_SPICE_Simulator" target="_blank">circuit solver</a> that uses modified nodal analysis to solve the voltage and currents of a reactive circuit. Since I've finished most of my EE courses, I am taking more math courses such as <a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=73" target="_blank">real analysis</a> to solidify my foundation.</p>
-                <h3>Resume</h3>
-                <p>Here's my most recent resume: <a href="./external_files/resume.pdf" target="blank">resume.pdf</a></p>
-                <h3>Education</h3>
-                <h4>2021 - 2025</h4>
-                <p>Bachelor of Science, Electrical Engineering, <em>University of California, Davis</em></p>
-                <h3>Contact</h3>
-                <p>Check out my projects on GitHub: <a href="https://github.com/ttwag" target="blank">https://github.com/ttwag</a></p>
-                <p>Check out my job experience on LinkedIn: <a href="https://www.linkedin.com/in/ttwag" target="blank">https://www.linkedin.com/in/ttwag</a></p>
-                <p>Email me: <a href="mailto:taowang@ucdavis.edu">taowang@ucdavis.edu</a></p>
-            </article>
+<div class="bg-rail left" aria-hidden="true"></div>
+<div class="bg-rail right" aria-hidden="true"></div>
+
+<div class="wrap">
+
+  <header>
+    <h1 class="name">Tao Wang</h1>
+    <p class="tagline">
+      I build systems from <strong>language design</strong> and <strong>compilers</strong> down to
+      <strong>digital logic</strong>. EE grad from UC Davis, starting a 1-year Master's this fall
+      while I look for full-time roles in <strong>compilers, computer architecture, and embedded/hardware systems</strong>.
+    </p>
+    <div class="links">
+      <a href="https://github.com/ttwag">GitHub</a>
+      <a href="https://www.linkedin.com/in/ttwag">LinkedIn</a>
+      <a href="mailto:taowang@ucdavis.edu">Email</a>
+      <a href="external_files/resume.pdf">Résumé</a>
+    </div>
+  </header>
+
+  <hr class="rule">
+
+  <section id="about">
+    <h2 class="section-title">About</h2>
+    <p>
+      EE grad from UC Davis, gravitating toward where hardware meets software — instruction sets,
+      compilers, and the layers between them. Interned at Cadence migrating part of an EDA tool
+      from C to C++. Outside of coursework, I write compilers and CPUs for fun.
+    </p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="flagship" class="flagship">
+    <h2 class="section-title">Flagship Project</h2>
+    <h3>A toy compiler — and the RISC-V CPU I built to run it</h3>
+    <p>
+      A language with no built-in multiplication, compiled by a hand-written Rust toolchain into
+      RISC-V assembly, executed on a single-cycle CPU I designed and wrote testbenches for — then
+      debugged waveform by waveform in Surfer.
+    </p>
+    <p>
+      The full write-up covers the language and register-allocation decisions, the build process
+      end to end, and a real bug that only showed up once the compiler, CPU, and testbench were
+      running together.
+    </p>
+
+    <div class="flagship-links">
+      <a href="compiler-cpu-writeup.html">Read the full write-up →</a>
+      <a href="https://github.com/ttwag/risc-v_compiler">risc-v_compiler</a>
+      <a href="https://github.com/ttwag/risc-v_cpu">risc-v_cpu</a>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section id="other-work">
+    <h2 class="section-title">Other Work</h2>
+    <div class="other-list">
+      <div class="other-item">
+        <div>
+          <div class="oi-name">Circuit Solver (SPICE-style)</div>
+          <div class="oi-desc">Modified nodal analysis to solve voltage/current in reactive circuits</div>
         </div>
-    </body>
+        <a class="repo-link" href="https://github.com/ttwag/P12_SPICE_Simulator">repo →</a>
+      </div>
+      <div class="other-item">
+        <div>
+          <div class="oi-name">RISC-V Floating Point Multiplication</div>
+          <div class="oi-desc">Floating-point multiply implemented in RISC-V assembly</div>
+        </div>
+        <a class="repo-link" href="https://github.com/ttwag/P4_Multiply_Floats">repo →</a>
+      </div>
+    </div>
+    <p style="margin-top: 18px;">
+      <a href="https://github.com/ttwag?tab=repositories">Full list of repositories on GitHub →</a>
+    </p>
+  </section>
+
+  <hr class="rule">
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="meta-row">
+      <span class="m-label">2026–2027</span>
+      <span class="m-value">Master's (1-year), <em>program TBD</em></span>
+    </div>
+    <div class="meta-row">
+      <span class="m-label">2021–2025</span>
+      <span class="m-value">B.S. Electrical Engineering, UC Davis</span>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <footer id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-list">
+      <div><span class="c-label">Email</span><a href="mailto:taowang@ucdavis.edu">taowang@ucdavis.edu</a></div>
+      <div><span class="c-label">GitHub</span><a href="https://github.com/ttwag">github.com/ttwag</a></div>
+      <div><span class="c-label">LinkedIn</span><a href="https://www.linkedin.com/in/ttwag">linkedin.com/in/ttwag</a></div>
+    </div>
+    <p class="foot-note">Tao Wang · Davis, CA</p>
+  </footer>
+
+</div>
+
+</body>
 </html>

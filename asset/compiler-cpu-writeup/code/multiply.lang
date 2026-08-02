@@ -1,0 +1,10 @@
+fn multiply(n: int , m: int) -> int {
+    let product: int := 0;
+    if (m == 0) { product := 0; }
+    else { product := multiply(n, m - 1) + n; }
+    return product;
+}
+
+fn main() -> int {
+    return multiply(12, 11);
+}

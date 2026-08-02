@@ -1,0 +1,16 @@
+/// From Grammar file
+stmt = ID ':=' expr ';'
+     | 'let' ID ':' type ':=' expr ';'
+     | 'if' '(' expr ')' '{' stmt* '}' ('elif' '(' expr ')' '{' stmt* '}')* ('else' '{' stmt* '}')?
+     | 'while' '(' expr ')' '{' stmt* '}'
+     ;
+
+/// Actual AST
+pub enum Stmt {
+    Assign(Id, Expr),
+    Let(Id, Type, Expr),
+    If(Branch, Vec<Branch>, Option<Vec<Stmt>>),
+    While(Branch),
+}
+
+// and more...

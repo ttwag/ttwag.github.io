@@ -1,0 +1,8 @@
+FST info: dumpfile sims/tb_cpu_top_with_compiled_hex_dump.fst opened for output.
+========================================
+Halting simulation. Test finished!
+ECALL detected at PC: 0x0000000c
+A0 =        132
+Cycle Count =         504
+========================================
+/workspaces/risc-v_cpu/test_bench/tb_cpu_top_with_compiled_hex.sv:83: $finish called at 3026 (1s)
