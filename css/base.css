@@ -127,7 +127,7 @@ body::after {
   bottom: 2vh;
   right: -4.5vw;
   width: 19vw;
-  height: 19vw;
+  height: 18vw;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,3 93,26 93,74 50,97 7,74 7,26' fill='none' stroke='%23E2DACB' stroke-width='1'/></svg>");
 }
 
