@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>self.shower() — Tao Wang</title>
+<meta name="description" content="What internships, a Taiwanese gas meter, and a Tokyo bathhouse taught me about the abstractions I've built my life around.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css">
+<link rel="stylesheet" href="../css/post.css">
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="post-header">
+    <div class="kicker">reflection</div>
+    <h1 class="post-title">self.shower()</h1>
+    <p class="subtitle">
+     On the hidden cost of optimizing life like software - that a Tokyo bathhouse and shopping mall taught me
+    </p>
+    <div class="post-meta">
+      <span><a href="../index.html">Tao Wang</a></span>
+      <span id="read-time" class="read-time">— min read</span>
+    </div>
+    <hr class="rule">
+    <nav class="toc">
+      <div class="toc-label">Contents</div>
+      <ol>
+        <li>
+          <a href="#observations">Observations</a>
+          <ol class="toc-sub">
+            <li><a href="#internship">Internship</a></li>
+            <li><a href="#taiwan">Taiwan</a></li>
+            <li><a href="#japan">Japan</a></li>
+          </ol>
+        </li>
+        <li>
+          <a href="#analysis">Analysis</a>
+          <ol class="toc-sub">
+            <li><a href="#internal-external-abstractions">The internal and external abstractions</a></li>
+            <li>
+              <a href="#what-i-lost">What I lost</a>
+            </li>
+            <li><a href="#change">Change</a></li>
+          </ol>
+        </li>
+        <li><a href="#back-to-taiwan">Back to Taiwan and beyond</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <hr class="rule">
+
+  <article id="article-content">
+
+    <h2 id="observations">Observations</h2>
+
+    <h3 id="internship">Internship</h3>
+
+    <figure class="section-image">
+      <img src="../asset/self-shower/image/target_store.png" alt="Front of Target Store">
+      <figcaption>At San Jose, I often bike to Target and stuff everything inside a backpack</figcaption>
+    </figure>
+
+    <p>
+      After graduating from college, I completed two consecutive internships that
+      lasted a total of 6 months. The first one was with Astera Labs, a fabless
+      chip design company in San Jose. The second one was with Amazon in Seattle.
+      Career-wise, it was a rare combination: an EE student usually brags about
+      designing or verifying silicon, and a CS student brags about implementing
+      web services, but few end up doing both.
+    </p>
+    <p>
+      In the internship, I lived within walking distance of Target or Safeway,
+      and most weeks looked the same: open the app, check the price per pound
+      against Amazon, note the aisle number, walk in, find the item, put it in a
+      basket, scan it myself, leave. Never once did I need help from a store
+      employee.
+    </p>
+    <p>
+      Around the end of the internships, I returned to Taiwan to complete the
+      mandatory military service (very reluctantly 😢, worth another story).
+    </p>
+
+    <h3 id="taiwan">Taiwan</h3>
+    <figure class="compact-image">
+      <img src="../asset/self-shower/image/gas_meter.png" alt="Front of a gas meter">
+      <figcaption>My grandma has to copy numbers from this machine</figcaption>
+    </figure>
+    <p>
+      Taiwan is where I was born and completed my elementary school. I lived
+      there for 12 years. When I went back for the service, I stayed at my
+      grandma's apartment. Every month, she had to check the gas meter in her
+      apartment for the usage number, then walk down three flights of stairs and
+      write that number down on a form stamped on the apartment's main door at
+      the lobby.
+    </p>
+
+    <h3 id="japan">Japan</h3>
+    <figure class="section-image">
+      <img src="../asset/self-shower/image/sento.png" alt="Japanese public bath">
+      <figcaption>Sentō is a traditional Japanese bathhouse</figcaption>
+    </figure>
+    <p>
+      A few months later, I went for a 5-day trip in Japan and stayed at a very
+      different place. Our hotel sits in Tokyo's Ginza area. It features a sentō
+      (public bath), where you strip away every belonging you own, like your
+      phone, watch, wallet, etc., and clean yourself in the shower section. After
+      the body is washed, you move into the hot bath. From neck to your toes,
+      your body is soaked inside a 40 degree celsius water, where heat slowly
+      creeps into your body, and your mind wanders around, partly to resist the
+      urge to jump out.
+    </p>
+    <p>
+      I stayed anyway. A few minutes later I moved to the cold bath, then back to
+      the hot one. Then I talked with my cousin about things we ate or saw on the
+      trip, and watched other bathers switching from hot to cold. <blockquote><em>No one was
+      checking a watch, because no one had one.</em></blockquote> Everything was in the locker, so
+      nothing could tell us what to do next.
+    </p>
+    <p>
+      We visited different places in Tokyo — Ginza, Odaiba, Asakusa, Ueno,
+      Shinjuku. While in Shinjuku, we went into the Isetan shopping mall. As I
+      walked past the Ralph Polo section and lingered next to a shirt, a staff
+      member stepped forward and asked if I'd like to try it on. I said yes, and
+      he brought me to the fitting room. After a few minutes, he knocked to make
+      sure I was ready. I stepped out and showed him how it fit. He made a
+      comment, and when I pushed back that it ran a little long, he took the
+      feedback and brought out a few sweaters instead. After I tried those on
+      too, he said the navy one suited me especially well. I thought so too — but
+      the shirts were expensive, and I politely let him know that I wasn't going
+      to buy anything today. He accepted it without any change in his manner,
+      handed me his business card, and said he hoped we'd visit the store again.
+    </p>
+
+    <h2 id="analysis">Analysis</h2>
+    <figure>
+      <img src="../asset/self-shower/image/target_app.png" alt="Target app">
+      <figcaption>Target app is almost the digital twin of a product</figcaption>
+    </figure>
+    <h3 id="internal-external-abstractions">The internal and external abstractions</h3>
+    <p>
+      In software, abstraction hides a system's "how" so you only have to think
+      about the "what" — just like you don't need to know Google's ranking
+      algorithm, only how to type in a question to the text box and hit enter to
+      get the search result. The Japan trip made me realize I'd quietly built my
+      life around two versions of abstractions, one external and one internal.
+    </p>
+    <p>
+      Externally, Target abstracted away my shopping experience. The app shows me
+      a product's look, price, aisle number, and nutrition. I don't need to ask
+      any staff anything. I could have asked a staff member which cut of beef
+      suited a recipe, but it never occurred to me; the Target app was designed
+      such that users interact with Target through the app, not through people. I
+      was so used to that level of abstraction that the gas meter in Taiwan was
+      hostile by comparison; not only did I have to know that the gas company
+      calculated bills from that number, the meter handed me a raw number like
+      "0064" instead of a calculated fee in dollars.
+    </p>
+    <p>
+      Internally, I abstracted away daily routine itself. Everyday necessities
+      such as showering became result-driven tasks, no different from calling a
+      method in programming — <code>self.shower()</code> — where I only cared
+      about latency (how long it takes) and resource cost (how much shampoo),
+      never the process itself. <em>It's a hyper-efficient way to live when you're
+      optimizing for internship deadlines. It's a strange way to live otherwise.</em>
+    </p>
+
+    <h3 id="what-i-lost">What I lost</h3>
+
+    <h4 id="negotiations">Negotiations</h4>
+    <p>
+      Abstraction sounds like a pure win for modern humans — Target built a
+      retail empire on it, while the Taiwanese utility system ignored it, turning
+      something that should be invisible into a monthly chore. But Japan showed
+      me what good abstraction can quietly cost: I lost the negotiation between
+      buyer and seller.
+    </p>
+    <p>
+      At the Isetan Mall, I've never felt more satisfied shopping without buying
+      anything. The Isetan staff member broke the abstraction entirely — he
+      handed me a business card with his name on it, gave me his honest read on
+      how a shirt fit, and let me push back when I disagreed. He'd fitted
+      thousands of people, and I got access to that judgment just by having an
+      honest conversation.
+    </p>
+    <p>
+      Sure, he had an incentive to upsell me — but I always had the right to say
+      no, and the friction of that back-and-forth negotiation was the point: it's
+      what makes a buyer more considerate in what he's buying and a seller more
+      keen on investing time to explain the details instead of relying on
+      generic marketing terms. Target's app skips all of this. Its recommendation
+      engine doesn't negotiate — it just serves you the next product. And its
+      staff, however experienced, aren't hired to have opinions about how a
+      shirt fits you; they're the physical extension of the app, there to
+      restock shelves or accept a return.
+    </p>
+
+    <h4 id="slow-reward">Slow reward from "chores"</h4>
+    <p>
+      Similarly, when the showering abstraction has me focusing on its result, I
+      forgot to enjoy the process. I thought stripping the process would make me
+      more productive, but I often ended up doom-scrolling for the quick brain
+      reward. It almost felt like I compensated for the lack of rewarding
+      experience from bathing with cheap rewards from my phone. In contrast, at
+      the sentō, there was no shortcut: just washing, then the hot bath, then
+      cold, then hot again, with nothing to check and nowhere to rush to. That
+      reward from mindful execution of purifying my body satiated my brain for a
+      longer period. By the time I was done bathing, I felt satisfied and ready
+      for the next task.
+    </p>
+
+    <h3 id="change">Change</h3>
+    <p>
+      Once I realized I had lost negotiation and the slow reward of chores, I
+      decided to make a change. It's certainly not possible and necessary to
+      shop at Isetan-style high-end stores for every product I purchase, nor do I
+      have enough time to give all everyday chores thorough processes. 
+      Moreover, some purchases are like the Taiwanese gas form - very 
+      administrative and boring.
+    </p>
+    <p>
+      Therefore, it's more practical to be strategic in what we change. For the
+      shopping experience, I think abstraction is still useful for utility items
+      like paper towels or dish soap, where experience with the product matters
+      more than negotiation, and the purchase decision could be re-evaluated
+      every few months. However, for high-value items intended to last long, I
+      would prefer to shop in-store with knowledgeable staff. The same principles
+      apply to chores — keep the one I am more interested in and do the rest
+      with efficiency in mind; the key is to have a balance between having and
+      not having abstractions.
+    </p>
+
+    <h2 id="back-to-taiwan">Back to Taiwan and beyond</h2>
+    <p>
+      After heading back to Taiwan, I immediately changed how I approached these
+      abstractions. When I showered, I deliberately slowed down the process and
+      did a hot-and-cold switch through the shower head to mimic the relaxing
+      cold-hot plunge. When I was shopping for a new pair of corrective glasses,
+      I actually went to a local optometrist and tried out many different pairs,
+      listened to his recommendations, and compared them with the research I had
+      done.
+    </p>
+
+    <blockquote>
+      <em>
+        What about you? Do you think there are any misplaced abstractions — both
+        internal and external — that are quietly impacting your life?
+      </em>
+    </blockquote>
+
+    <a class="back-link" href="../index.html">← back to tao wang</a>
+
+  </article>
+
+</div>
+
+<script>
+  // Computes read time from the article's visible word count.
+  // Recalculates automatically as content is added — no manual updates needed.
+  (function () {
+    var article = document.getElementById('article-content');
+    var text = article.innerText || article.textContent || '';
+    var words = text.trim().split(/\s+/).filter(Boolean).length;
+    var minutes = Math.max(1, Math.round(words / 200));
+    document.getElementById('read-time').textContent = minutes + ' min read';
+  })();
+</script>
+
+</body>
+</html>

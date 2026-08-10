@@ -1,5 +1,12 @@
 [
   {
+    "title": "self.shower()",
+    "path": "posts/self-shower.html",
+    "date": "2026-08",
+    "category": "Life",
+    "summary": "What a Trans-Pacific journey across the USA, Taiwan, and Japan taught me about the abstractions I've quietly built my life around."
+  },
+  {
     "title": "A Journey from Multiplication to Bits on Wires",
     "path": "posts/compiler-cpu-writeup.html",
     "date": "2026-08",
